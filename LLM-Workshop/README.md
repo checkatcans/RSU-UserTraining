@@ -325,7 +325,7 @@ $ sbatch ollama_gradio_run.sh
 $ ssh -L localhost:34742:rsu-training:34742 test06@171.102.216.177
 ```
 
-### Test Temperature Effect
+### ตัวอย่างการ Test Temperature Effect
 
 ```bash
 $ PORT=40318
