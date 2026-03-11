@@ -323,6 +323,8 @@ $ sbatch ollama_gradio_run.sh
 
 # SSH Tunnel (port จาก job output)
 $ ssh -L localhost:34742:rsu-training:34742 test06@171.102.216.177
+
+ลองเล่น model scb10x/llama3.1-typhoon2-8b-instruct
 ```
 
 ### ตัวอย่างการ Test Temperature Effect
