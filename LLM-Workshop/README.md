@@ -370,23 +370,3 @@ $ scancel -f <JOBID>
 ```
 
 ---
-
-## 📊 สรุปเปรียบเทียบวิธีรัน
-
-| วิธี | Root Required | GPU Support | HPC Friendly |
-|------|:---:|:---:|:---:|
-| Python (bare metal) | ❌ | ✅ | ✅ |
-| Docker | ❌ (docker group) | ✅ | ⚠️ (login node only) |
-| Docker → SIF (Apptainer) | ❌ | ✅ (--nv) | ✅ |
-| Singularity Sandbox | ❌ (--fakeroot) | ✅ (--nv) | ✅ |
-
----
-
-## 🔗 References
-
-- [Tech Stack Advisor GitHub](https://github.com/docker-aiml/tech-stack-advisor)
-- [Apptainer Documentation](https://apptainer.org/docs/)
-- [Ollama](https://ollama.com/)
-- [Gradio](https://www.gradio.app/)
-- [Hugging Face Spaces](https://huggingface.co/spaces)
-- [Typhoon2 Model (scb10x)](https://huggingface.co/scb10x/llama3.1-typhoon2-8b-instruct)
