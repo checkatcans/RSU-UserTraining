@@ -330,6 +330,7 @@ $ ssh -L localhost:34742:rsu-training:34742 test06@171.102.216.177
 ### ตัวอย่างการ Test Temperature Effect
 
 ```bash
+# รันบน rsu-training
 $ PORT=40318
 
 # temperature=0.0 → output เหมือนกันทุกครั้ง (deterministic)
