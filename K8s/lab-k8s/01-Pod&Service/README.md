@@ -10,7 +10,8 @@
 # Get more info
 ```bash
 kubectl get pods -o wide
-kubectl describe pod myapp-pod```
+kubectl describe pod myapp-pod
+```
 
 # Create the service
 `kubectl apply -f service-definition.yml`
