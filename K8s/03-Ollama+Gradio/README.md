@@ -25,8 +25,8 @@
 # Restart deployment after pull model
 ```bash
 kubectl rollout restart deployment/gradio-chatbot
-try access on web, will found the model for testing
 ```
+`Then try access on web, will found the model for testing`
 
 # Cleanup
 ```bash
