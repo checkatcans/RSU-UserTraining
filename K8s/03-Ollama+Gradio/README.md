@@ -1,14 +1,31 @@
-kubectl apply -f ollama-deployment.yaml
-kubectl apply -f ollama-service.yaml
-kubectl apply -f gradio-deployment.yaml  
-kubectl apply -f gradio-service.yaml    
+# Create the Ollama deployment
+`kubectl apply -f ollama-deployment.yaml`
 
+# Create the Ollama service
+`kubectl apply -f ollama-service.yaml`
 
-# Pull model
-kubectl exec -it -n test01-restricted deploy/ollama -- ollama pull scb10x/llama3.1-typhoon2-8b-instruct
+# Get all of running
+`kubectl get all`
+
+# Create the Gradio deployment
+`kubectl apply -f gradio-deployment.yaml  `
+
+# Create the Gradio service
+`kubectl apply -f gradio-service.yaml`
+
+# Get all of running
+`kubectl get all`
+
+# Manually Pull model
+`kubectl exec -it -n test01-restricted deploy/ollama -- ollama pull scb10x/llama3.1-typhoon2-8b-instruct`
 
 # Restart deployment after pull model
-kubectl rollout restart deployment/gradio-chatbot -n test01-restricted
-
+`kubectl rollout restart deployment/gradio-chatbot -n test01-restricted`
 
 try access on web, will found the model for testing
+
+# Cleanup
+```bash
+kubectl delete -f deployment-definition.yml
+kubectl delete -f service-definition.yml
+```
