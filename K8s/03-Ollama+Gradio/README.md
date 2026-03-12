@@ -28,8 +28,11 @@ kubectl rollout restart deployment/gradio-chatbot
 ```
 `Then try access on web, will found the model for testing`
 
+<img width="1624" height="1009" alt="image" src="https://github.com/user-attachments/assets/d96ff664-1432-488a-8c04-d8ee7e8e66bd" />
+
+
 # Cleanup
 ```bash
-kubectl delete -f deployment-definition.yml
-kubectl delete -f service-definition.yml
+kubectl delete deployment --all
+kubectl delete service --all
 ```
