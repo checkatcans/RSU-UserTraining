@@ -1,5 +1,5 @@
 # Create Ollama model directory
-`mkdir /data/home/test01/ollama_models/models`
+`mkdir -p /data/home/$USER/ollama_models/models`
 
 # Create the Ollama deployment
 `kubectl apply -f ollama-deployment.yaml`
