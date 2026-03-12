@@ -1,3 +1,6 @@
+# Create Ollama model directory
+`mkdir /data/home/test01/ollama_models/models`
+
 # Create the Ollama deployment
 `kubectl apply -f ollama-deployment.yaml`
 
@@ -17,7 +20,7 @@
 `kubectl get all`
 
 # Manually Pull model
-`kubectl exec -it -n test01-restricted deploy/ollama -- ollama pull scb10x/llama3.1-typhoon2-8b-instruct`
+`kubectl exec -it deploy/ollama -- ollama pull scb10x/llama3.1-typhoon2-8b-instruct`
 
 # Restart deployment after pull model
 `kubectl rollout restart deployment/gradio-chatbot -n test01-restricted`
