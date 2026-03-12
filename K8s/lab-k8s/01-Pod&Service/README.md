@@ -23,5 +23,21 @@ Get the NodePort of service/myapp-service
 Open browser the go to http://171.102.216.177:NodePort
 ```
 
+# Delete the pod then create the deployment instead
+```bash
+kubectl delete -f pod-definition.yml
+kubectl apply -f deployment-definition.yml
+```
+
+# Get all of running 
+```bash
+kubectl get all
+Get the NodePort of service/myapp-service
+Open browser the go to http://171.102.216.177:NodePort
+```
+
 # Cleanup
-`kubectl delete -f pod-definition.yml`
+```bash
+kubectl delete -f deployment-definition.yml
+kubectl delete -f service-definition.yml
+```
