@@ -11,7 +11,7 @@
 `kubectl get all`
 
 # Create the Gradio deployment
-`kubectl apply -f gradio-deployment.yaml  `
+`kubectl apply -f gradio-deployment.yaml`
 
 # Create the Gradio service
 `kubectl apply -f gradio-service.yaml`
@@ -23,9 +23,10 @@
 `kubectl exec -it deploy/ollama -- ollama pull scb10x/llama3.1-typhoon2-8b-instruct`
 
 # Restart deployment after pull model
-`kubectl rollout restart deployment/gradio-chatbot -n test01-restricted`
-
+```bash
+kubectl rollout restart deployment/gradio-chatbot
 try access on web, will found the model for testing
+```
 
 # Cleanup
 ```bash
