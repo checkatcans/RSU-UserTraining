@@ -17,9 +17,11 @@ kubectl describe pod myapp-pod
 `kubectl apply -f service-definition.yml`
 
 # Get all of running 
-`kubectl get all
+```bash
+kubectl get all
 Get the NodePort of service/myapp-service
-Open browser the go to http://171.102.216.177:NodePort`
+Open browser the go to http://171.102.216.177:NodePort
+```
 
 # Cleanup
 `kubectl delete -f pod-definition.yml`
