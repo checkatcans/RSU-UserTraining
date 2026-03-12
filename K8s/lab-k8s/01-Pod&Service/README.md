@@ -8,7 +8,7 @@
 `kubectl logs myapp-pod`
 
 # Get more info
-`kubectl get pods -o wide
+`kubectl get pods -o wide\n
 kubectl describe pod myapp-pod`
 
 # Create the service
