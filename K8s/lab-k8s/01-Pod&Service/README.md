@@ -8,8 +8,9 @@
 `kubectl logs myapp-pod`
 
 # Get more info
-`kubectl get pods -o wide\n
-kubectl describe pod myapp-pod`
+```bash
+kubectl get pods -o wide
+kubectl describe pod myapp-pod```
 
 # Create the service
 `kubectl apply -f service-definition.yml`
